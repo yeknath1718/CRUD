@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(237, 241, 243);
+}
+
+.container {
+  padding: 10px;
+  max-width: fit-content;
+  margin: 50px auto;
+}
+
+.btn {
+  border: none;
+  padding: 7px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-add {
+  background: #194064;
+  color: white;
+}
+
+.addContainer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addContainer form {
+  width: 420px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.addContainer form label {
+  font-size: 18px;
+}
+
+.addContainer form input {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.addContainer form button {
+  background-color: royalblue;
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.addContainer form .close-btn {
+  margin-left: auto;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.tableContainer {
+  margin-top: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableContainer table thead tr {
+  background-color: #ffcc80; /* Change table heading color */
+}
+
+.tableContainer table thead tr th,
+.tableContainer table tbody tr td {
+  padding: 10px;
+  text-align: center;
+}
+
+.tableContainer table thead tr th:not(:last-child),
+.tableContainer table tbody tr td:not(:last-child) {
+  border-right: 1px solid #c9c5c2;
+}
+
+.tableContainer table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tableContainer table tbody tr {
+  border-bottom: 1px solid #c9c5c2; /* Add line between rows */
+}
+
+.btn-edit {
+  background-color: #42a5f5; /* Change edit button color */
+}
+
+.btn-delete {
+  background-color: #e57373; /* Change delete button color */
+}
+
+.btn-edit,
+.btn-delete {
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  color: white; /* Set text color for edit and delete buttons */
+}
